@@ -3,7 +3,8 @@ export default function Home() {
         <div>
             <header>
                 <nav className="flex justify-center">
-                    <div className="fixed top-5 bg-[rgba(173,216,230,0.5)] backdrop-blur-md w-auto p-4 rounded-2xl box-border z-100">
+                    <div
+                        className="fixed top-5 bg-[rgba(173,216,230,0.5)] backdrop-blur-md w-auto p-4 rounded-2xl box-border z-100">
                         <a href="#1" className="mx-[50px] hover:text-white">HOME</a>
                         <a href="#2" className="mx-[50px] hover:text-white">ABOUT</a>
                         <a href="#3" className="mx-[50px] hover:text-white">PROJECTS</a>
@@ -23,10 +24,11 @@ export default function Home() {
                         </div>
 
                         <div className="mt-4 md:mt-0 md:ml-8">
-                            <img src="/title_image.jpg" alt="hi" className="w-[300px] h-[365px] rounded-[30]" />
+                            <img src="/title_image.jpg" alt="hi" className="w-[300px] h-[365px] rounded-[30]"/>
                         </div>
                     </div>
                 </section>
+                <div className="w-full h-[300px] bg-[#D4F0FF] mask-bg-wave mt-[200px]"/>
 
 
                 <div className="flex justify-center mt-[140px] mb-[30px]">
@@ -34,14 +36,27 @@ export default function Home() {
                 </div>
                 <section className="flex justify-center mb-[140px] px-4" id="2">
                     <div
-                        className="border border-[#D4F0FF] w-full max-w-screen-lg bg-[#D4F0FF] shadow-2xl flex flex-col md:flex-row items-center md:items-start p-10">
-                        <img src="/about_image.jpg" alt="about_image" className="max-w-[350px] max-h-[454px] " />
-                        <div className="mt-6 md:mt-[10%] md:ml-[3%] text-center md:text-left">
-                            blablablablsdbflasdfjdslfjdslkdfjldsjflkdsjflksjfkdkdkdkdk <br/>
-                            blablablablsdbflasdfjdslfjdslkdfjldsjflkdsjflksjfkdkdkdkdk
+                        className="border border-[#D4F0FF] w-full max-w-screen-lg bg-[#D4F0FF] shadow-2xl flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-12 p-6 sm:p-8 md:p-10">
+                        <img
+                            src="/about_image.jpg"
+                            alt="about_image"
+                            className="w-full max-w-[300px] md:max-w-[350px] h-auto object-contain"
+                        />
+
+                        <div
+                            className="text-center md:text-left text-sm sm:text-base md:text-lg leading-relaxed break-words">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+                            et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+                            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                            diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                            voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+                            gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
                         </div>
                     </div>
                 </section>
+                <div className="w-full h-[300px] bg-[#D4F0FF] mask-bg-wave"/>
+
 
                 <div className="flex justify-center mt-[140px] mb-[30px]">
                     <div className="font-bold text-[#A1C9FF] text-[34px]">Projects</div>
@@ -77,14 +92,15 @@ export default function Home() {
                 </section>
 
             </main>
-            <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-                <div className="border border-[#D4F0FF] w-full max-w-screen-lg bg-[#D4F0FF] flex p-9">
-                    <div>Linked in</div>
-                    <div>Github</div>
-                    <div></div>
+            <footer className="row-start-3 flex flex-col items-center justify-center gap-6">
+                <div className="w-full bg-[#D4F0FF] mask-wave min-h-[250px] overflow-hidden">
+                    <div className="border border-[#D4F0FF] max-w-screen-lg mx-auto flex p-9 justify-center gap-6">
+                        <div>LinkedIn</div>
+                        <div>GitHub</div>
+                    </div>
                 </div>
-
             </footer>
+
         </div>
     );
 }
