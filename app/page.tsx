@@ -1,14 +1,15 @@
 export default function Home() {
     return (
         <div>
-            <header>
+            <header className="w-full">
                 <nav className="flex justify-center">
                     <div
-                        className="fixed top-5 bg-[rgba(173,216,230,0.5)] backdrop-blur-md w-auto p-4 rounded-2xl box-border z-100">
-                        <a href="#1" className="mx-[50px] hover:text-white">HOME</a>
-                        <a href="#2" className="mx-[50px] hover:text-white">ABOUT</a>
-                        <a href="#3" className="mx-[50px] hover:text-white">PROJECTS</a>
-                        <a href="#4" className="mx-[50px] hover:text-white">CONTACT</a>
+                        className="fixed top-5 z-[100] bg-[rgba(173,216,230,0.5)] backdrop-blur-md px-8 py-4 rounded-2xl flex flex-wrap justify-center items-center gap-8 sm:gap-12 md:gap-16 max-w-[90vw]"
+                    >
+                        <a href="#1" className="hover:text-white text-lg sm:text-xl">HOME</a>
+                        <a href="#2" className="hover:text-white text-lg sm:text-xl">ABOUT</a>
+                        <a href="#3" className="hover:text-white text-lg sm:text-xl">PROJECTS</a>
+                        <a href="#4" className="hover:text-white text-lg sm:text-xl">CONTACT</a>
                     </div>
                 </nav>
             </header>
@@ -54,6 +55,7 @@ export default function Home() {
                             gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
                         </div>
                     </div>
+
                 </section>
                 <div className="w-full h-[300px] bg-[#D4F0FF] mask-bg-wave"/>
 
@@ -61,7 +63,7 @@ export default function Home() {
                 <div className="flex justify-center mt-[140px] mb-[30px]">
                     <div className="font-bold text-[#A1C9FF] text-[34px]">Projects</div>
                 </div>
-                <section className="flex flex-wrap items-center justify-center" id="3">
+                <section className="flex flex-wrap items-center justify-center mb-[100px]" id="3">
                     <div className="rounded-xl shadow-2xl w-[350px] h-[450px] m-[20px] overflow-hidden">
                         <img src="/FlaskMySQL_picture.jpg" alt="FlaskMySQL " className="h-[225px] w-full"></img>
                         <div className="h-[225px] bg-amber-50 w-full break-words">
@@ -91,13 +93,20 @@ export default function Home() {
 
                 </section>
 
+                <section className="flex flex-wrap items-center justify-center">
+                    <img src="/python_image.png" alt="python" className="max-h-[225px] hover:rotate-10 transition-transform duration-1000"/>
+                    <img src="/java_image.png" alt="python" className="max-h-[225px] hover:rotate-10 transition-transform duration-1000"/>
+                    <img src="/js_image.png" alt="python" className="max-h-[200px] rounded rounded-3xl hover:rotate-10 transition-transform duration-1000"/>
+                    <img src="/mongodb_image.png" alt="python" className="max-h-[225px] hover:rotate-10 transition-transform duration-1000"/>
+                    <img src="/bash_image.png" alt="python" className="max-h-[225px] hover:rotate-10 transition-transform duration-1000"/>
+                    <img src="/mysql_image.png" alt="python" className="max-h-[225px] hover:rotate-10 transition-transform duration-1000"/>
+                    <img src="/nextjs_image.png" alt="python" className="max-h-[200px] rounded rounded-2xl hover:rotate-10 transition-transform duration-1000"/>
+                    <img src="/react_image.png" alt="python" className="max-h-[225px] hover:rotate-10 transition-transform duration-1000"/>
+                </section>
+
             </main>
             <footer className="row-start-3 flex flex-col items-center justify-center gap-6">
                 <div className="w-full bg-[#D4F0FF] mask-wave min-h-[250px] overflow-hidden">
-                    <div className="border border-[#D4F0FF] max-w-screen-lg mx-auto flex p-9 justify-center gap-6">
-                        <div>LinkedIn</div>
-                        <div>GitHub</div>
-                    </div>
                 </div>
             </footer>
 
