@@ -19,13 +19,17 @@ export default function Home() {
                     id="1"
                 >
                     <div className="flex flex-wrap justify-center items-center w-full max-w-[1200px]">
-
-                        <div className="text-4xl md:text-5xl font-bold text-center md:text-left w-full md:w-auto">
-                            ALTIN DEMKU
+                        <div>
+                            <div className="text-4xl md:text-5xl font-bold text-center md:text-left w-full md:w-auto">
+                                ALTIN DEMKU
+                            </div>
+                            <div className="flex items-center gap-2 mt-2">
+                                <img src="/email-image.png" alt="E-Mail" className="w-[40px] h-[30px] rounded-full"/>
+                                <span>altin-demko@hotmail.de</span>
+                            </div>
                         </div>
-
                         <div className="mt-4 md:mt-0 md:ml-8">
-                            <img src="/title_image.jpg" alt="hi" className="w-[300px] h-[365px] rounded-[30]"/>
+                            <img src="/title_image.jpg" alt="Profile" className="w-[300px] h-[365px] rounded-[30px]"/>
                         </div>
                     </div>
                 </section>
@@ -94,14 +98,37 @@ export default function Home() {
                 </section>
 
                 <section className="flex flex-wrap items-center justify-center">
-                    <img src="/python_image.png" alt="python" className="max-h-[225px] hover:rotate-10 transition-transform duration-1000"/>
-                    <img src="/java_image.png" alt="python" className="max-h-[225px] hover:rotate-10 transition-transform duration-1000"/>
-                    <img src="/js_image.png" alt="python" className="max-h-[200px] rounded rounded-3xl hover:rotate-10 transition-transform duration-1000"/>
-                    <img src="/mongodb_image.png" alt="python" className="max-h-[225px] hover:rotate-10 transition-transform duration-1000"/>
-                    <img src="/bash_image.png" alt="python" className="max-h-[225px] hover:rotate-10 transition-transform duration-1000"/>
-                    <img src="/mysql_image.png" alt="python" className="max-h-[225px] hover:rotate-10 transition-transform duration-1000"/>
-                    <img src="/nextjs_image.png" alt="python" className="max-h-[200px] rounded rounded-2xl hover:rotate-10 transition-transform duration-1000"/>
-                    <img src="/react_image.png" alt="python" className="max-h-[225px] hover:rotate-10 transition-transform duration-1000"/>
+                    <img src="/python_image.png" alt="python"
+                         className="max-h-[225px] hover:rotate-10 transition-transform duration-1000"/>
+                    <img src="/java_image.png" alt="python"
+                         className="max-h-[225px] hover:rotate-10 transition-transform duration-1000"/>
+                    <img src="/js_image.png" alt="python"
+                         className="max-h-[200px] rounded rounded-3xl hover:rotate-10 transition-transform duration-1000"/>
+                    <img src="/mongodb_image.png" alt="python"
+                         className="max-h-[225px] hover:rotate-10 transition-transform duration-1000"/>
+                    <img src="/bash_image.png" alt="python"
+                         className="max-h-[225px] hover:rotate-10 transition-transform duration-1000"/>
+                    <img src="/mysql_image.png" alt="python"
+                         className="max-h-[225px] hover:rotate-10 transition-transform duration-1000"/>
+                    <img src="/nextjs_image.png" alt="python"
+                         className="max-h-[200px] rounded rounded-2xl hover:rotate-10 transition-transform duration-1000"/>
+                    <img src="/react_image.png" alt="python"
+                         className="max-h-[225px] hover:rotate-10 transition-transform duration-1000"/>
+                </section>
+
+                <div className="flex justify-center mt-[160px] mb-[30px]">
+                    <div className="font-bold text-[#A1C9FF] text-[34px]">Contact</div>
+                </div>
+                <section className="flex flex-wrap items-center justify-center mb-[10px]" id="4">
+                    <a href="https://www.linkedin.com/feed/">
+                        <img src="/linkediin-image.png" alt="linkedin"
+                             className="w-[150px] h-[150px] rounded-[30px]"/>
+                    </a>
+                    <a href="https://github.com/altin-demku">
+                        <img src="/github-image.png" alt="github"
+                             className="w-[110px] h-[110px] rounded-[30px]"/>
+                    </a>
+
                 </section>
 
             </main>
