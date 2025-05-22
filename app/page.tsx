@@ -1,3 +1,5 @@
+import TypingName from "./components/TypingName";
+
 export default function Home() {
     return (
         <div>
@@ -20,9 +22,7 @@ export default function Home() {
                 >
                     <div className="flex flex-wrap justify-center items-center w-full max-w-[1200px]">
                         <div>
-                            <div className="text-4xl md:text-5xl font-bold text-center md:text-left w-full md:w-auto">
-                                ALTIN DEMKU
-                            </div>
+                            <TypingName />
                             <div className="flex items-center gap-2 mt-2">
                                 <img src="/email-image.png" alt="E-Mail" className="w-[40px] h-[30px] rounded-full"/>
                                 <span>altin-demko@hotmail.de</span>
