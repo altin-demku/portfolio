@@ -1,10 +1,11 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 let index = 0;
 
 export default function TypingName() {
     const fullName = "ALTIN DEMKU";
     const [typedName, setTypedName] = useState("");
+    const typing = useRef(false);
 
     function handleNameChange() {
         if(index < fullName.length) {
@@ -14,11 +15,12 @@ export default function TypingName() {
     }
 
     useEffect(() => {
-        setTimeout(handleNameChange, 500);
+        setTimeout(handleNameChange, 200);
     }, [typedName]);
 
     useEffect(() => {
-        handleNameChange();
+        if(typing.triggered === false) handleNameChange();
+        typing.triggered = true
     }, []);
 
 
