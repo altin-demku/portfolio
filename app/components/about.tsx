@@ -15,13 +15,11 @@ const About: React.FC = () => {
 
                 <div
                     className="text-center md:text-left text-sm sm:text-base md:text-lg leading-relaxed break-words">
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                    invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
-                    et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-                    Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                    diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-                    voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
-                    gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                    Hi, I’m Altin, living in beautiful Switzerland. I’m passionate about staying active.
+                    whether that’s training in the gym or enjoying some summer fishing. When I’m not outdoors, 
+                    you’ll probably find me watching movies (I’m a total film fan!) or firing up the grill to 
+                    cook something delicious. I love combining my curiosity, creativity, and enthusiasm in 
+                    everything I do, both in life and in my work.
                 </div>
             </div>
         </section>
